@@ -6,6 +6,7 @@ body {
   flex-direction: column;
 
   --primary-color: rgb(105, 105, 140);
+  --primary-color-faded: rgba(105, 105, 140, 0.4);
 }
 .content-container {
   flex: 1;
@@ -60,4 +61,9 @@ a {
     width: auto;
     height: 95%;
   } 
+}
+
+.footer {
+  border-top: 1px solid var(--primary-color-faded);
+  background-color: transparent;
 }
