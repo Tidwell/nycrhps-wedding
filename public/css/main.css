@@ -1,3 +1,6 @@
+html {
+  font-size: 18px;
+}
 body {
   background: url(/images/bg.png);
   min-height: 100vh;
@@ -102,7 +105,7 @@ a {
   border-bottom: 1px solid var(--primary-color-faded);
 }
 
-.hero-section .title, .hero-section .fa-angle-double-right {
+.hero-section .title, .hero-section .subtitle, .hero-section .fa-angle-double-right {
   color: #f8f8ff;
   text-shadow: 0 0 2px #4a4a4a;
 }
@@ -123,6 +126,9 @@ a {
   width: 100%;
 }
 
+.rsvp-section {
+  background-color: var(--primary-color-faded);
+}
 .rsvp-section .bg {
   position: absolute;
   top: 0;
@@ -160,13 +166,16 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero-section .title.is-1 {
+  .hero-section .title.is-1, .hero-section .subtitle {
     width: 100%;
     text-align: center;
     max-width: none;
   }
   .title.is-1 {
     font-size: 2rem;
+  }
+  .hdr-hero .subtitle.is-3 {
+    font-size: 1.5rem;
   }
   .hero-section .fa-angle-double-right {
     display: none;
