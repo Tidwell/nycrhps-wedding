@@ -48,7 +48,7 @@ a {
 .hero .title {
   max-width: 60vw;
 }
-.hero img {
+.hdr-hero img {
   position: absolute;
   right: 1em;
   bottom: 2px;
@@ -123,7 +123,30 @@ a {
   width: 100%;
 }
 
+.rsvp-section .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.rsvp-section .bg img {
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+  transform: rotate(-10deg);
+}
 
+.rsvp-section .title.is-1 {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+.rsvp-form {
+  width: 50%;
+  margin: 0 auto 2em auto;
+}
 
 @media only screen and (min-width: 1088px) {
   .hero-body {
@@ -147,13 +170,13 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  .hero img {
+  .hdr-hero img {
     width: auto;
     height: 75%;
   } 
 }
 @media only screen and (min-width: 1200px) {
-  .hero img {
+  .hdr-hero img {
     width: auto;
     height: 95%;
   } 
