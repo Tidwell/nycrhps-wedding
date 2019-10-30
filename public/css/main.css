@@ -247,3 +247,23 @@ a {
   padding: 1em;
   background-color: rgba(255,255,255, 0.75);
 }
+
+.photos .photo-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .photos .photo-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photos .photo-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
